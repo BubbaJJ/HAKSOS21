@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Titel på sidan. -->
+    <title>HTML Demo</title>
+  </head>
+  <body>
+    <!-- Rubrik -->
+    <h1>Testar HTML</h1>
+    <hr />
+    <h2>Rubriker</h2>
+    <h1>h1</h1>
+    <h2>h2</h2>
+    <h3>h3</h3>
+    <h4>h4</h4>
+    <h5>h5</h5>
+    <h6>h6</h6>
+    <!-- Paragraf -->
+    <p>SOS21GB</p>
+
+    <h2>Bilder</h2>
+    <!-- Infogar en bild. Storlek 500x300 -->
+    <img
+      src="https://i.guim.co.uk/img/media/88f6b98714035656cb18fb282507b60e82edb0d7/0_57_2560_1536/master/2560.jpg?width=620&quality=45&auto=format&fit=max&dpr=2&s=ba524fc454d04b8306b1cd88e133d488"
+      alt="Could not load Homer..."
+      width="500"
+      height="300"
+    /><br />
+    <h2>Länkar</h2>
+    <!-- Öppnar GitHub i en ny flik. -->
+    <a href="https://github.com" target="_blank">GitHub Start</a>
+
+    <!-- Laddar ner en bild. -->
+    <a href="" download="./homer.jpg">Homer</a>
+    <h2>Knappar</h2>
+    <!-- Enkel knapp -->
+    <button>Press here!</button>
+
+    <!-- Inaktiverad knapp -->
+    <button disabled>Press here!</button>
+
+    <!-- Knapp för att nollställa ett formulär. -->
+    <button name="btnReset" type="reset">Reset</button>
+
+    <h2>Länkar - Special</h2>
+    <!-- Knapp för länkning till GitHub -->
+    <a href="https://github.com" target="_blank">
+      <button name="btnGitHub">GitHub</button>
+    </a>
+
+    <!-- Bild för länkning till GitHub -->
+    <a href="https://github.com" target="_blank">
+      <img src="./homer.jpg" alt="Homer" width="200" height="100" />
+    </a>
+
+    <h2>Listor</h2>
+    <h4>ol</h4>
+    <ol>
+      <li>List item 1</li>
+      <li>List item 2</li>
+    </ol>
+    <hr />
+    <h4>ul</h4>
+    <ul>
+      <li>List item 1</li>
+      <li>List item 2</li>
+    </ul>
+    <hr />
+    <h4>Lista med länk</h4>
+    <ol>
+      <li><a href="https://github.com" target="_blank">GitHub</a></li>
+      <li>List item 2</li>
+    </ol>
+    <hr />
+    <h4>Nestade listor</h4>
+    <ol>
+      <li>Nivå 1</li>
+      <ol>
+        <li>Nivå 2</li>
+        <ul>
+          <li>Nivå 3</li>
+          <ol>
+            <li>Nivå 4</li>
+          </ol>
+        </ul>
+        <li>Nivå 2</li>
+      </ol>
+    </ol>
+
+    <h2>Tabeller</h2>
+    <table>
+      <tr>
+        <th>Rubrik 1</th>
+        <th>Rubrik 2</th>
+        <th>Rubrik 3</th>
+      </tr>
+      <tr>
+        <td>Data 1</td>
+        <td>Data 2</td>
+        <td>Data 3</td>
+      </tr>
+      <tr>
+        <td>Data 5</td>
+        <td>Data 6</td>
+      </tr>
+    </table>
+    <hr />
+
+    <table>
+      <tr>
+        <!-- Kolumbredd = 2 -->
+        <th colspan="2">Rubrik 1</th>
+        <th>Rubrik 2</th>
+      </tr>
+      <tr>
+        <!-- Radhöjd = 2 -->
+        <td rowspan="2">Data 1</td>
+        <td>Data 2</td>
+        <td>Data 3</td>
+      </tr>
+      <tr>
+        <td>Data 4</td>
+        <td>Data 5</td>
+      </tr>
+    </table>
+
+    <h2>Textformattering</h2>
+    <p><strong>Bold</strong></p>
+    <p><b>Bold</b></p>
+    <p><em>Italic</em></p>
+    <p><u>Underlined</u></p>
+    <p><strike>Striked through</strike></p>
+
+    <p>
+      <b><em>Bold and Italic</em></b>
+    </p>
+
+    <!-- Kommentarar -->
+    <!-- TODO: sdfsdf -->
+    <!-- * asdsd -->
+    <!-- ? asd -->
+    <!-- ! test -->
+
+    <!-- KOMMENTAR -->
+  </body>
+</html>
