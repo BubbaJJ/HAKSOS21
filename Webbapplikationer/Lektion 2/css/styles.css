@@ -1,0 +1,41 @@
+/* Ändrar matchande element */
+h2 {
+    color: gold;
+  }
+p {
+    color: blue;
+  }
+/* Ändrar matchande id */
+#title{
+    color: red;
+  }
+/* Ändrar matchande klass */
+.mainHeader{
+  color: green;
+}
+/* Ändrar bakgrundsfärg för allt innanför body */
+body{
+  background-color: grey;
+	}
+  /* Ändrar bakgrundsfärg för allt innanför header */
+header{
+    background-color: gold;
+    /* margin-top:20px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    margin-left: 10px; */
+
+    /* margin: 20px 10px 20px 10px; */
+
+    /* margin: 50px 10px; */
+
+    margin: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px;
+  }
+  a:hover{
+  color:magenta;
+  cursor:wait;
+  }
+  
