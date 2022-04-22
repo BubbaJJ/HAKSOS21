@@ -1,0 +1,72 @@
+-- SKAPA EN NY DATABAS
+CREATE DATABASE sos21;
+
+-- VÄLJ DATABASEN
+USE sos21;
+
+-- SKAPA EN NY TABELL
+CREATE TABLE users(
+    id int,
+    name NVARCHAR(50)
+);
+
+-- LÄGGA IN DATA I TABELLEN
+INSERT INTO users (id, name, number)
+VALUES (1, 'Jim', 1);
+
+-- HÄMTA ALL DATA I TABELLEN
+SELECT * FROM users
+
+-- LÄGGA IN DATA I TABELLEN (FLERA SAMTIDIGT)
+INSERT INTO users (id, name, number) 
+VALUES (2, 'Leo', 2),(3, 'Arasto', 3),(4, 'Eva', 4);
+
+-- HÄMTA ALL DATA I TABELLEN
+SELECT * FROM users
+
+-- UPPDATERA DATA I TABELLEN
+UPDATE users
+SET name = 'Lars'
+WHERE id = 2
+
+-- HÄMTA ALL DATA I TABELLEN
+SELECT * FROM users
+
+-- RADERA DATA I TABELLEN
+DELETE FROM users
+WHERE id > 2
+
+-- HÄMTA ALL DATA I TABELLEN
+SELECT * FROM users
+
+-- HÄMTA UNIK DATA I TABELLEN
+SELECT DISTINCT id FROM users;
+
+-- HÄMTA DATA I VISSA KOLUMNER I TABELLEN
+SELECT name FROM users;
+
+-- HÄMTA DATA BASERAT PÅ VILLKOR
+SELECT * FROM users
+WHERE id <> 3
+
+-- HÄMTA X ANTAL RADER
+SELECT TOP 2 * FROM users;
+
+-- LÄGG TILL EN KOLUMN I TABELLEN
+ALTER TABLE users
+ADD number int UNIQUE
+
+-- Lägsta värdet
+SELECT MIN(number) FROM users;
+
+-- Högsta värdet
+SELECT MAX(number) FROM users;
+
+-- Antal
+SELECT COUNT(number) FROM users;
+
+-- Medelvärde
+SELECT AVG(number) FROM users;
+
+-- Summa
+SELECT SUM(number) FROM users;
