@@ -1,41 +1,79 @@
-/* Ändrar matchande element */
+/* Formatterar alla h2 element */
 h2 {
-    color: gold;
-  }
+  /* Ändrar textfärg */
+  color: gold;
+}
+
+/* Formatterar alla p element */
 p {
-    color: blue;
-  }
-/* Ändrar matchande id */
+  /* Ändrar textfärg */
+  color: blue;
+}
+
+/* Formatterar alla element med id="title" */
 #title{
-    color: red;
-  }
-/* Ändrar matchande klass */
+  /* Ändrar textfärg */
+  color: red;
+}
+
+/* Formatterar alla element med class="mainHeader" */
 .mainHeader{
+  /* Ändrar textfärg */
   color: green;
 }
-/* Ändrar bakgrundsfärg för allt innanför body */
+
+/* Formatterar allt inuti body. */
 body{
+  /* Ändrar bakgrundsfärg. */
   background-color: grey;
-	}
-  /* Ändrar bakgrundsfärg för allt innanför header */
+}
+
+/* Formatterar för allt inuti header. */
 header{
-    background-color: gold;
-    /* margin-top:20px;
-    margin-right: 10px;
-    margin-bottom: 20px;
-    margin-left: 10px; */
+  /* Ändrar bakgrundsfärg. */
+  background-color: gold;
 
-    /* margin: 20px 10px 20px 10px; */
+  /* Ändrar margin för varje sida runt header */
+  margin-top:20px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  margin-left: 10px;
 
-    /* margin: 50px 10px; */
+  /* Ändrar margin runt header (top = 20px, right = 10px, bottom = 20px, left = 10px) */
+  margin: 20px 10px 20px 10px;
 
-    margin: 10px;
-    border: 2px solid black;
-    border-radius: 5px;
-    padding: 5px;
-  }
-  a:hover{
+  /* Ändrar margin runt header (top/bottom = 50px, right/left = 50px) */
+  margin: 50px 10px; 
+
+  /* Ändrar margin runt header (top = 10px, right = 10px, bottom = 10px, left = 10px) */
+  margin: 10px;
+
+  /* Skapar en ram(border) runt header width=2px, type=solid, color=black */
+  border: 2px solid black;
+
+  /* Rundar hörnen på ramen(border) */
+  border-radius: 5px;
+
+  /* Ändrar padding runt innehållet i header till 5px. */
+  padding: 5px;
+}
+
+/* Formattering för när man håller pekaren över ett a element */
+a:hover{
+  /* Ändrar textfärg */
   color:magenta;
-  cursor:wait;
-  }
   
+  /* Ändrar muspekaren */
+  cursor:wait;
+}
+
+#description{
+  /* Ändrar teckenstorlek */
+  font-size:32px;
+  /* Ändrar textfärg */
+  color:black;
+  /* Centrerar texten */
+  text-align: center;
+  /* Gör texten understruken */
+  text-decoration: underline;
+}

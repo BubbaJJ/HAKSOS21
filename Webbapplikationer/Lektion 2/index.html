@@ -1,18 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Titel på dokumentet - syns på fliken i webbläsaren. -->
     <title>Lektion 2</title>
+    <!-- Länkar in en separat css-fil -->
     <link rel="stylesheet" type="text/css" href="./css/styles.css" />
+    <!-- Alla länkar inleds med https://github.com/ -->
     <!-- <base href="https://github.com/" target="_blank" /> -->
   </head>
   <body>
+    <!-- Header -->
     <header>
+      <h1 id="description">Header</h1>
+      <!-- h2 med formattering enligt mainHeader i CSS -->
       <h2 class="mainHeader">Lektion 2</h2>
+
+      <!-- nav = navigationbar -->
       <nav>
+        <!-- Länk till dokumentet about.html -->
         <a href="about.html">About me</a>
       </nav>
     </header>
+    <hr />
+    <!-- Sektion -->
     <section class="mainHeader">
+      <h1 id="description">Section</h1>
       <h2>Span</h2>
       <h3 id="title">
         Handelsakademin
@@ -25,6 +37,7 @@
         <div>SOS21</div>
         GB
       </h3>
+      <!-- Beskrivande lista -->
       <h2>Descriptive list</h2>
       <dl>
         <dt>Definition / Namn</dt>
@@ -33,26 +46,37 @@
         <dd>Beskrivning 1</dd>
         <dd>Beskrivning 2</dd>
       </dl>
-      <hr />
       <h2>Base demo</h2>
-      <a href="BubbaJJ/SOS21GB">GitHub BASE</a>
-      <!-- Override base with href & target -->
+      <a href="BubbaJJ/SOS21GB">GitHub BASE</a><br />
+      <!-- Override base with href & target. -->
       <a href="http://github.com" target="_self">GitHub SELF</a>
-      <hr />
     </section>
-    <aside>
+    <hr />
+
+    <!-- Sektion -->
+    <section>
+      <h1 id="description">Section</h1>
       <h2>Form demo</h2>
+      <!-- Formulär -->
       <form name="registration">
+        <!-- Vanliga textrutor. -->
         <label for="firstName">First name:</label><br />
         <input type="text" name="firstName" /><br />
         <label for="lastName">Last name:</label><br />
         <input type="text" name="lastName" /><br />
+
+        <!-- email validerar att adressen är i korrekt format. -->
         <label for="emailAddress">Email address:</label><br />
         <input type="email" name="emailAddress" /><br />
+
+        <!-- password döljer tecken vid inmatning. -->
         <label for="password">Password:</label><br />
         <input type="password" name="password" /><br />
+
+        <!-- select = dropdown lista. -->
         <label for="cars">Select your car:</label><br />
         <select name="cars">
+          <!-- Gruppering av alternativen -->
           <optgroup label="Svenska bilar">
             <option value="Volvo">Volvo</option>
             <option value="Saab">Saab</option>
@@ -61,22 +85,48 @@
             <option value="Ford">Ford</option>
           </optgroup>
         </select>
+
+        <!-- Kryssrutor - Går att välja flera. -->
         <p>Checkboxes:</p>
         <input type="checkbox" name="checkbox1" />Checkbox1<br />
         <input type="checkbox" name="checkbox2" />Checkbox2
+
+        <!-- Radioknappar - Går att välja en. -->
         <p>Radio buttons:</p>
         <input type="radio" name="radio" />Radio1<br />
         <input type="radio" name="radio" />Radio2<br />
+        <br />
+
+        <!-- Färgväljare. -->
         <label for="color">Color Picker:</label><br />
         <input type="color" name="color" /><br />
+        <br />
+
+        <!-- Datumväljare (endast datum). -->
         <label for="Date">Date Picker:</label><br />
         <input type="Date" name="date" /><br />
+        <br />
+
+        <!-- Datumväljare (datum och tid). -->
         <label for="datetime">Date Time Picker:</label><br />
         <input type="datetime-local" name="datetime" /><br />
+        <br />
+
+        <!-- Knapp för att skicka in datan från formuläret. -->
         <input type="submit" value="Submit" />
+
+        <!-- Knapp för att nollställa datan i formuläret. -->
         <input type="reset" value="Reset" />
       </form>
+      <br />
+      <!-- textarea = större textruta. -->
       <textarea name="comment" form="registration">Enter text here...</textarea>
-    </aside>
+    </section>
+    <hr />
+    <!-- Footer -->
+    <footer>
+      <h1 id="description">Footer</h1>
+      <h4>Handelsakademin SOS21GB</h4>
+    </footer>
   </body>
 </html>
