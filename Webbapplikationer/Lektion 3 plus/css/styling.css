@@ -1,6 +1,6 @@
 .container{
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: 20% repeat(5, 1fr);
     grid-template-rows: auto;
     grid-gap: 10px;
 }
@@ -78,13 +78,6 @@
     transform: translateY(0%);
 }
 
-@media screen and (max-width: 768px){
-    .card{
-        width: 200px;
-        height: auto;
-        aspect-ratio: 2/3;
-    }
-}
 
 @media screen and (max-width: 320px){
     .card{
@@ -93,4 +86,12 @@
         aspect-ratio: 2/3;
     }
 }
-    
+
+
+@media screen and (max-width: 768px) and (min-width: 321px){
+    .card{
+        width: 200px;
+        height: auto;
+        aspect-ratio: 2/3;
+    }
+}
