@@ -43,5 +43,66 @@ i {
 }
 
 nav{
-        margin: 30px;
+        display:flex;
+        justify-content: center;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.input-container{
+    display: flex;
+    width: 100%;
+    margin:5px;
+    flex-direction: column;
+}
+
+#done{
+    color: rgb(7, 255, 7);
+}
+
+.btn{
+    color: white;
+    padding: 15px, 20px;
+    width: 100%;
+    opacity: 0.6;
+    border: none;
+}
+
+.btn:hover{
+    opacity: 1;
+    transition: opacity 1s
+}
+
+.btn-submit{
+    background-color:green;
+    grid-column: 1/3;
+}
+
+.btn-reset{
+    background-color:red;
+    grid-column: 1/3;
+}
+
+input{
+    border: none;
+    border-bottom: 2px solid maroon;
+    width: 30%;
+}
+
+form{
+    width: 70%;
+    max-width: 600px;
+    min-width: 200px;
+}
+
+input:focus{
+    border: none;
+    outline: none;
+    border-bottom: 2px solid green;
+    width:100%;
+    transition: width 1s;
 }
