@@ -70,3 +70,131 @@ console.log(f());
 function buttonAlert() {
   alert("Button clicked!");
 }
+
+var counter = 0;
+
+function countUp() {
+  if (counter < 10) {
+    counter++;
+  } else {
+    alert("Counter is at max value!");
+  }
+}
+
+function countDown() {
+  if (counter > 0) {
+    counter--;
+  } else {
+    alert("Counter is at min value!");
+  }
+}
+
+function showCount() {
+  alert(counter);
+}
+
+const user = {
+  name: "Jim",
+  age: 33,
+  teach: (className) => `I am teaching ${className}`,
+};
+
+console.log(user);
+console.log(user.name);
+console.log(user["name"]);
+console.log(user.teach("JavaScript"));
+
+user.name = "John";
+user["age"] = 34;
+
+console.log(user.name);
+console.log(user.age);
+
+class User {
+  name;
+  age;
+
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
+}
+
+const newUser = new User("Jim", 33);
+
+console.log(newUser);
+
+// Hämtar alla button element
+const tags = document.getElementsByTagName("button");
+console.log(tags);
+
+// Hämtar första elementet med class="newColor"
+const selector = document.querySelector(".newColor");
+console.log(selector);
+
+// Hämtar alla element med class="newColor"
+const selectors = document.querySelectorAll(".newColor");
+console.log(selectors);
+
+// Hämtar första elementet med id="btnCountUp"
+const btnCountUp = document.querySelector("#btnCountUp");
+console.log(btnCountUp);
+
+// Hämtar närmsta föräldern
+// const parent = document.querySelector(".newColor").parentElement;
+const parent = selector.parentElement;
+console.log(parent);
+
+// Hämtar alla "barn"
+const children = document.querySelector("#main").children;
+console.log(children);
+
+// Hämtar närmsta föräldern, som matcher ett villkor.
+const p = btnCountUp.closest("#div-3");
+console.log(p);
+
+// Hämtar efterföljande element, på samma nivå.
+const next = document.querySelector(".newColor").nextElementSibling;
+console.log(next);
+
+// Hämtar föregående element, på samma nivå.
+const previous = document.querySelector(".newColor").previousElementSibling;
+console.log(previous);
+
+// Infogar och skriver över i element som har id="innerHTML".
+document.querySelector("#innerHTML").innerHTML =
+  "<h1>Hello!</h1><p class='newColor'> World!</p><a href='https://github.com'>GitHub</a>";
+
+const getattr = document.querySelector(".newColor").getAttribute("id");
+console.log(getattr);
+
+document.querySelector(".newColor").setAttribute("id", "newId");
+
+document.querySelector(".newColor").classList.add("btn");
+
+let classes = document.querySelector(".newColor").classList;
+console.log(classes);
+
+document.querySelector(".newColor").classList.remove("btn");
+classes = document.querySelector(".newColor").classList;
+console.log(classes);
+
+// const colors = document.querySelectorAll(".newColor");
+// colors.forEach((child) => child.classList.add("btn"));
+
+function testFunction(name) {
+  console.log(`Test function! ${name}`);
+}
+
+// document
+//   .querySelector(".newColor")
+//   .setAttribute("onclick", `testFunction(${i})`);
+const c = document.querySelectorAll(".newColor");
+c.forEach((child, i) => child.setAttribute("onclick", `testFunction(${i})`));
+
+document.querySelector(".newColor").classList.toggle("btn");
+// document.querySelector(".newColor").classList.toggle("btn");
+// document.querySelector(".newColor").classList.toggle("btn");
+
+let username = prompt("Enter your name: ");
+alert("Welcome, " + username);

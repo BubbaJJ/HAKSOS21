@@ -45,3 +45,8 @@
 
 ## Övning 2c
 Gör om dina funktioner till EventListeners.
+
+## Övning 3
+1. Skriv ett script som sätter onclick för alla .child-klasser. 
+2. Så att när man klickar på ett child så läggs det till en klass som ändrar färgen på den. 
+3. Om den redan har den nya klassen så ska den tas bort.  

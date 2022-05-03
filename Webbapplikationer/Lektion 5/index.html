@@ -11,9 +11,19 @@
     <header>
       <h1>Lektion 5</h1>
     </header>
-    <main>
-      <p>Lektion 5 demokod...</p>
-      <button onclick="buttonAlert()">Click here!</button>
+    <main id="main">
+      <div id="div-1">
+        <a href="http://github.com">Länk</a>
+        <p id="firstParagraph" class="newColor">Lektion 5 demokod...</p>
+        <button onclick="buttonAlert()">Click here!</button>
+        <div id="div-2">
+          <button id="btnCountUp" onclick="countUp()">+1</button>
+          <button onclick="countDown()">-1</button>
+          <button onclick="showCount()">Show value</button>
+        </div>
+        <h2 class="newColor">Får ej vara lägre än 0 eller högre än 10</h2>
+        <div id="innerHTML"></div>
+      </div>
     </main>
     <script src="./js/script.js"></script>
   </body>

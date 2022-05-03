@@ -3,3 +3,17 @@ body{
     flex-direction: column;
     align-items: center;
 }
+
+.newColor{
+    color:blue;
+    font-weight: bold;
+}
+
+#innerHTML{
+    color: navy;
+}
+
+.btn{
+    color: pink;
+    background-color: navy;
+}
