@@ -1,5 +1,6 @@
 // alert("Script loaded!");
 
+// DATATYPER
 let x = 12;
 
 console.log(typeof x); // Skriver ut number
@@ -12,11 +13,12 @@ y = 5;
 console.log(y); // Skriver ut 5
 console.log(typeof y); // Skriver ut number
 
-1 == "1"; // Skriver ut true
-1 === "1"; // Skriver ut false
+// JÄMFÖRELSEOPERATORER
+1 == "1"; // Skriver ut true    (Samma värde)
+1 === "1"; // Skriver ut false  (Samma värde, olika datatyper)
 
-1 == 1; // Skriver ut true
-1 === 1; // Skriver ut true
+1 == 1; // Skriver ut true      (samma värde)
+1 === 1; // Skriver ut true     (samma värde, samma datatyp)
 
 false == []; // Skriver ut true
 false === []; // Skriver ut false
@@ -25,9 +27,17 @@ false === []; // Skriver ut false
 0 === []; // Skriver ut false
 
 // Ternary operator
-var z = y === 6 ? 3 : 1;
+// var z = (villkor) ? (om sant) : (om falskt);
+var z = y === 6 ? 3 : 0;
 console.log(z); // Skriver ut 0
 
+if (y === 6) {
+  var z = 3;
+} else {
+  var z = 0;
+}
+
+// LOOPAR
 let arr = [1, 2, 3, , 4, 5];
 
 console.log("for (let i = 0; i < arr.length; i++)");
@@ -51,9 +61,11 @@ arr.forEach((elem) => console.log(elem));
 console.log("arr.forEach((elem, i) => console.log(elem, i))");
 arr.forEach((elem, i) => console.log(elem, i));
 
+// FUNKTIONER
 function greet(name) {
   return `Hello, ${name}!`;
 }
+
 let message = greet("Jim");
 console.log(message);
 
@@ -93,6 +105,7 @@ function showCount() {
   alert(counter);
 }
 
+// OBJEKT
 const user = {
   name: "Jim",
   age: 33,
@@ -110,6 +123,7 @@ user["age"] = 34;
 console.log(user.name);
 console.log(user.age);
 
+// KLASSER
 class User {
   name;
   age;
@@ -196,5 +210,91 @@ document.querySelector(".newColor").classList.toggle("btn");
 // document.querySelector(".newColor").classList.toggle("btn");
 // document.querySelector(".newColor").classList.toggle("btn");
 
-let username = prompt("Enter your name: ");
-alert("Welcome, " + username);
+// let username = prompt("Enter your name: ");
+// alert("Welcome, " + username);
+
+// Alla children till main
+const mainChildren = document.querySelector(":not(div) p");
+console.log(mainChildren);
+
+// Hämta elementet som kommer innan, på samma nivå.
+const prev = document.querySelector("button").previousElementSibling;
+console.log(prev);
+
+// Hämta elementet som kommer efter, på samma nivå.
+const nextS = document.querySelector("button");
+console.log(nextS.nextElementSibling);
+
+// Hämta alla element som inte är div, p eller a
+const all = document.querySelectorAll(":not(div, p, a, title)");
+console.log(all);
+
+// Hämtar alla h2-element som har header som förälder.
+const inParent = document.querySelectorAll("header > h2");
+console.log(inParent);
+
+// Hämtar alla div-element som är placerade direkt efter ett h2-element.
+const divsAfterH2 = document.querySelectorAll("h2+div");
+console.log(divsAfterH2);
+
+// Hämtar alla div-element som är placerade direkt efter ett h2-element. med samma förälder.
+const p2 = document.querySelectorAll("div~h2");
+console.log(p2);
+
+// Hämtar alla div-element som är placerade direkt efter ett h2-element. med samma förälder.
+const p3 = document.querySelectorAll("div, h2");
+console.log(p2);
+
+// Hämtar alla div-element som är placerade direkt efter ett h2-element. med samma förälder.
+const p4 = document.querySelectorAll("div h2");
+console.log(p2);
+
+// Hämta alla button-element med namnet showCountBtn
+const showCountBtn = document.querySelectorAll("[name='showCountBtn']");
+console.log(showCountBtn);
+
+// Reagerar när användaren trycker på knappen med id alertBtn.
+// document.querySelector("#alertBtn").addEventListener("click", buttonAlert);
+
+// Reagerar när användaren trycker på knappen med id alertBtn.
+// document.querySelector("#alertBtn").addEventListener("mouseleave", () => {
+//   alert("button pushed!");
+// });
+
+// const alertBtn = document.querySelector("#alertBtn");
+// alertBtn.addEventListener("click", buttonAlert);
+
+// document.addEventListener("click", function (event) {
+//   if (event.target.classList.contains("btn")) {
+//     console.log("button clicked");
+//   }
+// });
+
+// Kör funktionen buttonAlert när användaren trycker på valfri button.
+$("button").click(buttonAlert);
+
+// Kör funktionen buttonAlert när användaren trycker på valfri button med id btnCountUp.
+$("button#btnCountUp").click(buttonAlert);
+
+// Kör koden efter att sidan laddats klart.
+// $(document).ready(function () {
+//   alert("Page loaded!");
+// });
+
+// ALTERNATIV SYNTAX FÖR DOCUMENT.READY
+// $(function () {
+//   alert("Page loaded!");
+// });
+
+// Flera eventListeners
+$("p").on({
+  click: function () {
+    $(this).css("background-color", "red");
+  },
+  mouseenter: function () {
+    $(this).css("background-color", "green");
+  },
+  mouseleave: function () {
+    $(this).css("background-color", "white");
+  },
+});
