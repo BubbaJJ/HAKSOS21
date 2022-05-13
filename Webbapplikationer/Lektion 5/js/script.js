@@ -1,5 +1,16 @@
 // alert("Script loaded!");
 
+prompt("Enter your name:");
+
+const person = {
+  name: "John",
+  age: 30,
+};
+
+console.log(person.name);
+console.log(person["name"]);
+console.log(person[0]);
+
 // DATATYPER
 let x = 12;
 
@@ -298,3 +309,9 @@ $("p").on({
     $(this).css("background-color", "white");
   },
 });
+
+$("btn").clock(function () {});
+
+document.querySelector("#navbar");
+
+6 > "5";

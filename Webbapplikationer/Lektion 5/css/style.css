@@ -21,3 +21,11 @@ body{
 main{
     color: purple;
 }
+
+
+.light{
+    color:black;
+}
+.dark{
+    color:white;
+}
